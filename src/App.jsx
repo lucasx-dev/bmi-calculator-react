@@ -62,9 +62,9 @@ function App() {
         setClasse("Obesidade grau 3");
       }
       setMostar(true);
+      setAltura("");
+      setPeso("");
     }
-    setAltura("");
-    setPeso("");
   };
   const selecionarCor = () => {
     if (classe === "Magreza") {

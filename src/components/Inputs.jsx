@@ -7,7 +7,9 @@ const Input = ({ peso, altura, setAltura, setPeso }) => {
         autoFocus
         placeholder="Peso (ex: 65.0) kg"
         value={peso}
-        onChange={(e) => setPeso(e.target.value.replace(",", "."))}
+        onChange={(e) =>
+          setPeso(e.target.value.replace(/(\d{1})(\d{1})(\d)(\d)/, ",", "."))
+        }
         className="rounded-md p-2 outline-violet-600 bg-gray-800 text-white"
       />
       <h1>Digite sua altura:</h1>
